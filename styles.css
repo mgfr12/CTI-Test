@@ -1,0 +1,397 @@
+@gray-darker:               #444444;
+@gray-dark:                 #696969;
+@gray:                      #999999;
+@gray-light:                #cccccc;
+@gray-lighter:              #ececec;
+@gray-lightest:             lighten(@gray-lighter,4%);
+
+
+:root {
+  --bg: #FFFFFF;
+  --purple: #FFFFFF;
+  --green: #5ff8c2;
+}
+*,
+*::before,
+*::after { 
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #C4C4C4;
+;
+}
+
+body {
+  color: @gray;
+  font-family: 'Roboto','Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 1rem;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on;
+}
+
+
+
+
+.btn--block {
+  display: block;
+  width: 100%;
+}
+
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards__item {
+
+}
+
+.card {
+   position: absolute;
+  width: 884px;
+  height: 590px;
+
+  background: #FFFFFF;
+}
+
+.carddd {
+position: absolute;
+width: 355px;
+height: 590px;
+margin-left: 67%;
+margin-right: 25%;
+background: #FFFFFF;
+}
+
+.card__content {
+  position: absolute;
+  width: 884px;
+  height: 590px;
+  background: #FFFFFF;
+}
+
+.card__conten {
+position: absolute; 
+width: 355px;
+height: 590px;
+background: #FFFFFF;
+}
+
+.card__item {
+margin-left: 3%;
+margin-top: 5%;
+width: 112px;
+height: 29px;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height:150%;
+color: #333333;
+}
+
+.card__item2{
+ margin-left: 3%;
+width: 183px;
+height: 29px;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height:150%;
+color: #333333;
+}
+
+.card__item3{
+margin-left: 3%;
+
+height: 29px;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height:150%;
+
+color: #333333;
+}
+
+.linea {
+margin-left: 3%;
+width: 818px; 
+opacity: 0.5;
+border: 0.1px solid #A4A4A3;
+}
+
+
+.linea1 {
+margin-left: 3%;
+margin-top: 9%;
+width: 330px; 
+opacity: 0.5;
+border: 0.1px solid #A4A4A3;
+}
+
+.card__title {
+
+ width: 851px;
+ height: 42px;
+ margin-left: 3%;
+margin-top: 3%;
+font-style: normal; 
+font-weight: bold;
+font-size: 32px;
+line-height: 35px;
+color: #27ABC8;
+}
+
+.card__text {
+
+ width: 525px;
+ height: 16px;
+ margin-left: 3%;
+ margin-top: 5%;
+ font-style: italic;
+ font-weight: 100;
+ font-size:24px; 
+ line-height: 16px;
+ color: #333333;
+
+}
+
+.card__text1 {
+margin-left: 3%;
+width: 488px;
+height: 31px;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 128%;
+color: #333333;
+}
+
+.card__textt {
+margin-left: 80%;
+position: absolute;
+width: 39px;
+height: 15px;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 15px;
+letter-spacing: -0.2px;
+color: #SF6062;
+}
+
+.card__link {
+margin-left: 3%;
+font-style: italic;
+width: 210px;
+height: 18px;
+font-weight: 100; 
+font-size: 14px;
+line-height: 200%;
+text-decoration-line: underline;
+color: #27ABC8
+}
+
+.togglee {
+margin-left: 90%;
+position: absolute;
+width: 39px;
+height: 15px;
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 15px;
+letter-spacing: -0.2px;
+color: #SF6062;
+
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 55px;
+  height: 23.12px;
+  background-color: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  box-sizing: border-box;
+  border-radius: 40px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.switch:after {
+  content: '';
+  position: absolute;
+  width: 19.38px;
+  height: 19.38px;
+  border-radius: 19px;
+  background-color: #BABABA;
+  top: 1.38px;
+  left: 1.38px;
+ 
+  transition: all 0.3s;
+}
+
+input[type='checkbox']:checked + .switch:after {
+  transform: translateX(23px);
+  background-color: #BABABA;
+}
+
+
+
+.offscreen {
+  position: absolute;
+  left: -9999px;
+}
+
+.range-slider-block {
+  margin-left: 40% ;
+  
+}
+
+/*lineacita azul*/
+.range-sliders input[type=range] {
+  background: white;
+  border-radius: 55%;
+  border: solid 4px #27ABC8;
+  cursor: pointer; 
+  width: 19.26px;
+  height: 19.26px;
+}
+
+
+
+.range-sliders input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: white;
+  border-radius: 55%;
+  border: solid 4px #27ABC8;
+  cursor: pointer; 
+  width: 19.26px;
+  height: 19.26px;
+}
+
+
+.range-sliders .range-slider-group .range-slider {
+  width: 400px; 
+  height: 6px;
+  background: #E1E1E1; 
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+
+.range-sliders .range-slider-group .input-slider {
+margin-left: 500px;
+margin-top: 0px;
+width: 90px;
+height: 36px;
+background: #FFFFFF;
+border: 1px solid #A4A4A3;
+box-sizing: border-box;
+border-radius: 8px;
+}
+
+@media (min-width: 576px) {
+
+  .range-sliders {
+    width: 500px;
+    padding: 3rem;
+  }
+}
+@media (min-width: 768px) {
+
+  body {
+    font-size: 1.125rem;
+  }
+
+  .range-slider-container {
+    padding: 4rem 4rem;
+  }
+}
+
+.card__title1 {
+ margin-left: 6%;
+margin-top: 13%;
+font-style: normal;
+font-weight: bold;
+font-size: 18px; 
+line-height: 20px;
+color: #333333;
+}
+
+.card__price { 
+margin-right: 10%;
+ 
+font-style: normal; 
+font-weight: bold; 
+font-size: 18px; 
+line-height: 22px;
+text-align: right;
+color: #333333;
+}
+
+
+.sidebar_item {
+ margin-left: 6%;
+width: 73px; 
+height: 13px;
+font-style: normal; 
+font-weight: normal; 
+font-size: 14px; 
+line-height: 4px;
+letter-spacing: -0.025em;
+color: #333333;
+}
+
+
+.sidebar_sub{
+margin-left: 6%;
+margin-top: 6%;
+font-style: normal;
+font-weight: bold;
+font-size: 16px; 
+line-height: 20px;
+color: #333333;
+}
+
+.side_item{
+margin-left: 6%;
+margin-top: 4%;
+font-style: normal; 
+font-weight: normal; 
+font-size: 14px; 
+line-height: 200%;
+color: #333333;
+}
+
+.side_price{
+margin-left: 12%;
+margin-top: 4%;
+font-style: normal; 
+font-weight: normal; 
+font-size: 14px; 
+line-height: 200%;
+color: #333333;
+}
+
+.side_link{
+margin-left: 20%;
+width: 221px;
+height: 19px;
+font-style: italic;
+font-weight: 100;
+font-size: 14px;
+line-height: 200%;
+text-decoration-line: underline;
+color: #27ABC8;
+}
+
+
